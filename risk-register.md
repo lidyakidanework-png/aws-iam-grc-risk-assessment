@@ -10,7 +10,7 @@ This risk register documents potential identity and access management risks iden
 
 #Initial Risk for Assessment 
 # Risk-001: Excessive IAM Permissions
-**- Risk Description:** Users may have permissions beyond those required for their job responsibilities, potentially allowing unauthorized access to AWS resources
+- **Risk Description:** Users may have permissions beyond those required for their job responsibilities, potentially allowing unauthorized access to AWS resources
 **- Affected Asset:** AWS IAM users, groups, and policies.
 **- Likelihood:** To be assessed.
 **- Impact:** To be assessed. 
