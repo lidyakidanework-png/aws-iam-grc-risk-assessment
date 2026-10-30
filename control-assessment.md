@@ -1,10 +1,10 @@
-#AWS IAM Security Control Assessment
+# AWS IAM Security Control Assessment
 
-#Purpose 
+# Purpose 
 
 This document records the review of selected security controls within a simulated AWS environment. The objective is to determine whether existing IAM configurations support appropriate access management and risk reduction. 
 
-#Assessment Status
+# Assessment Status
 Initial planning - control testing and evidence collection have not yet been completed. 
 
 # Control 1: Access Enforcement
