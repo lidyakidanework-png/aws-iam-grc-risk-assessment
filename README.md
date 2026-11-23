@@ -1,4 +1,4 @@
-# aws-iam-grc-risk-assessment
+# AWS IAM GRC Risk Assessment
 
 ## A hands on governance, risk & compliance assessment of identity and access controls in a simulated AWS environment, using NIST SP 800-53. 
 
