@@ -1,8 +1,8 @@
 # aws-iam-grc-risk-assessment
 
-# A hands on governance, risk & compliance assessment of identity and access controls in a simulated AWS environment, using NIST SP 800-53. 
+## A hands on governance, risk & compliance assessment of identity and access controls in a simulated AWS environment, using NIST SP 800-53. 
 
-  **Background:** This project is phase two of my AWS IAM RBAC project. In this GRC project I assessed the IAM security risk, evaluated controls and documented remediation actions.
+  **Background:** This project is phase two of my [AWS IAM RBAC Security Lab](https://github.com/lidyakidanework-png/aws.iam.rbac.security.lab) In this GRC project I assessed the IAM security risk, evaluated controls and documented remediation actions.
 
 # Project Overview
 
@@ -15,8 +15,7 @@ Three risks were identified and each rated moderate(12/25). Two remediation acti
 
 # Deliverable                                                             
 
-1. **Risk Assessment Report Link:** [AWS.Risk_Assessment_Report (3).pdf](https://github.com/user-attachments/files/35286795/AWS.Risk_Assessment_Report.3.pdf)
-
+1. **Risk Assessment Report Link:** [AWS_Risk_Assessment_Report.pdf](https://github.com/user-attachments/files/35288567/AWS_Risk_Assessment_Report.pdf)
 2. **Risk Assessment Workbook Link:** [AWS-IAM-Risk-Assessment (1).xlsx](https://github.com/user-attachments/files/35286806/AWS-IAM-Risk-Assessment.1.xlsx)
 
 Description
@@ -53,17 +52,28 @@ The initial assessment focuses on:
 **NIST SP 800-53 controls referenced:** AC-2 Account Management · AC-3 Access Enforcement · AC-6 Least Privilege · IA-2 Identification & Authentication · AU-2 Event Logging (R-003, future work)
 # Results 
 
+## Controls & Findings
+
 | Finding | Control | Result | Gap |
 |---|---|---|---|
 | F-001 | Role-Based Access Control |  Effective | None identified in testing |
 | F-002 | Least Privilege |  Effective for tested actions | No comprehensive permission review; custom S3 policy resource scope needs validation |
 | F-003 | Multi-Factor Authentication |  Partially validated | MFA confirmed for John.Admin only; remaining users not verified |
 
-# Remediation plan (POA&M)
+## Risk Register Summary
+| Risk | Title | Inherent Score | Rating | Proposed Residual | Status |
+|---|---|---|---|---|---|
+| R-001 | Excessive IAM Permissions | 12 | Moderate | 8 | Open |
+| R-002 | Inadequate MFA Coverage | 12 | Moderate | 8 | Open |
+| R-003 | Insufficient Audit Logging & Monitoring | 12 | Moderate | 12 | Not yet assessed |
+
+## Remediation plan (POA&M)
 | ID | Finding | Action | Priority | Target | Status |
 |---|---|---|---|---|---|
 | PA-001 | F-002 / R-001 | Review all IAM policies and group permissions; validate the custom S3 policy's resource scope; restrict access to job requirements | Moderate | Dec 20, 2026 |  Open |
 | PA-002 | F-003 / R-002 | Verify MFA enrollment for all users; enable MFA where missing; require MFA for privileged accounts | Moderate | Dec 16, 2026 |  Open |
 
-
+## Limitations & Next Steps
+- MFA was verified for John.Admin only; next step is to verify MFA status for all IAM users.
+- Audit logging (R-003) was identified as a risk but was outside the scope of this assessment and was not tested.
 
