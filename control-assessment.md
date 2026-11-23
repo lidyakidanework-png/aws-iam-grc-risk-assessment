@@ -43,5 +43,3 @@ Initial planning - control testing and evidence collection have not yet been com
 -  **Findings:** Pending evidence collection.
 -  **Recommended Action:** Address gaps in audit logging and document an appropriate monitoring and review process.
 
-# Assessment Notes
-Control reference identify relevant areas of the NIST SP 800-53 framework. Their inclusion does not establish that a control has been implemented or that the environment is compliant. The Final conclusions will be dependent on the evidence collected and the assessment scope. 
