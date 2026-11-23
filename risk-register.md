@@ -6,7 +6,7 @@ This risk register documents potential identity and access management risks iden
 - **Likelihood:** Low, Medium, or High 
 - **Impact:** Low, Medium, or High 
 - **Risk Rating:** To be determined after assessing likelihood and impact 
-- **Status:** Open until the risk has been evaluated and appropriate actions documented 
+
 
 #Initial Risk for Assessment 
 # Risk-001: Excessive IAM Permissions
@@ -17,7 +17,7 @@ This risk register documents potential identity and access management risks iden
 - **Risk Rating:** Pending assessment.
 - **Existing Controls:** To be verified.
 - **Recommended Mitigation:** Apply least privilege access, review attached policies, and remove unnecessary permissions. 
-- **Status:** Open - assessment pending. 
+  
 
 # Risk-002: Inadequate Multi-Factor Authentication
 - **Risk Description:** Accounts without appropriate MFA protection may be more vulnerable to unauthorized access if credentials are compromised. 
@@ -37,11 +37,5 @@ This risk register documents potential identity and access management risks iden
 - **Risk Rating:** To be assessed. 
 - **Existing Controls:** To be verified. 
 - **Recommended Mitigations:** Review available AWS audit logging, validate monitoring coverage, and establish a process for reviewing relevant  events. 
-- **Status:** Open - assessment pending. 
 
-The Next Steps: 
-- Inspect the existing AWS IAM configurations.
-- Gather evidence for each risk.
-- Determine likelihood, impact, and risk ratings.
-- Document verified existing controls.
-- Record remediation actions and track unresolved risks. 
+ 
